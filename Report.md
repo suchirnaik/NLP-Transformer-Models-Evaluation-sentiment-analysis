@@ -1,4 +1,4 @@
-# HW7 - Sentiment Analysis Comparison
+# Sentiment Analysis Comparison
 
 ## Pretrained Models
 
