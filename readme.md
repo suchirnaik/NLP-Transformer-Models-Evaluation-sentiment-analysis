@@ -27,20 +27,6 @@ The `...ForSequenceClassification` models were ideal for my task. [Here's an exa
 
 Before diving into the main project, I ensured to explore and practice loading pretrained models from the documentation to get familiar with the library.
 
-## Specific Requirements
-The specific requirements of this project included:
-
-1. Choosing pretrained models to evaluate:
-   a. Selecting three models trained in the same classification task, OR
-   b. Choosing two models trained on task A and two models trained on task B.
-2. Selecting relevant datasets for comparing pretrained models. Each dataset should consist of at least 100 examples for a meaningful comparison.
-3. Writing a comprehensive report covering the following aspects:
-   a. Summarizing the accuracy of all models on their respective datasets.
-   b. Providing explicit comparisons and discussing the results. I identified any surprises or potential issues affecting the results.
-   c. Including a section on the limitations of my comparisons.
-   d. Adding a section on how these pretrained models could be beneficial for future research in the same domain.
-4. Submitting the report along with the code, ensuring that my code followed the guidelines discussed in class and provided online.
-
 ## Wrapping Up
 This project was a fantastic opportunity to apply my NLP skills and explore the world of pretrained transformer models. The hands-on experience with Hugging Face's offerings has equipped me with valuable knowledge and skills that I can leverage in my future NLP projects and research.
 
