@@ -73,9 +73,4 @@ Training the model and running the tests proved to be more fruitful in my case f
 - There could have been more models that could have performed better in the list of pre-trained models on Hugging Face, especially in the case of Distilbert.
 - However, the other two pretrained models performed better than when I trained the models on my own. This was because probably the pre-trained models were trained on the entire IMDB dataset of 25000 rows rather than my dataset for training which contained only 3000 rows.
 
-## How I Could Use These Pre-trained Models in the Future
 
-- There are many pre-trained models on IMDB, Twitter, etc. on Hugging Face.
-- Since we are implementing sarcasm detection on Twitter data, probably using a pre-trained model for sarcasm can be very fruitful for us rather than training a model on our own. This can help us reduce the computational expenses required for running a transformer model on a large dataset.
-- Also Hugging Face has many pre-trained models on different datasets. They can be useful to us in the future for sentiment analysis and sarcasm detection.
-- We plan to continue our Sarcasm detection project in the future. Right now we have only trained and tested non-transformer models. Our hypothesis is that the transformer models would have a higher accuracy in detecting sarcasm. Using pre-trained models will turn out to be very helpful for us in the future.
