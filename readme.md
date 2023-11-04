@@ -1,49 +1,48 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2706
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab560
-\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+# NLP Project: Pretrained Transformer Models Comparison
 
-\f0\fs26 \cf0 # NLP Language Models Project\
-\
-## Overview\
-\
-Welcome to my Natural Language Processing (NLP) Language Models project! In this project, I'll be working with Language Models (LMs) to analyze a dataset. The main goal is to explore the capabilities of LMs and understand their performance in the context of NLP.\
-\
-## Dataset\
-\
-The dataset chosen for this project is the "Toxic Comment Dataset." It's important to note that this dataset contains toxic comments, so please exercise caution when reviewing the data. You can access both the training and test sets [here](https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/data).\
-\
-- **Training Set (train.csv):** This set will be used for training our Language Models.\
-- **Test Set (test.csv) and Labels (test_labels.csv):** These files will be used for testing and analyzing our models. It's crucial to understand how the training and test sets are structured.\
-\
-## Language Model Tasks\
-\
-As part of this project, I'll be implementing two essential functions for Language Models:\
-\
-1. **train_LM(path_to_train_file):** This function will train a Language Model (up to a bigram model) using the provided training data file. The training data file should follow the same format as the training data.\
-\
-2. **test_LM(path_to_test_file, LM_model):** This function will test the Language Model on a test file. For each instance in the test file, it will assign a Maximum Likelihood Estimation (MLE) score for each test text. The function will generate an output file in the same format as the test file, including a new column with the MLE scores.\
-\
-## Project Tasks\
-\
-During this project, I'll complete the following tasks:\
-\
-1. Create three distinct Language Models:\
-   - **LM_full:** Trained on the entire training dataset.\
-   - **LM_not:** Trained on the training data with toxic labels set to 0.\
-   - **LM_toxic:** Trained on the training data with toxic labels set to 1.\
-\
-2. Test each Language Model on the following:\
-   - The full test set.\
-   - A subset of data with non-toxic labels.\
-   - A subset of data with toxic labels.\
-\
-3. Analyze and make observations based on the model performances. I'll calculate averages of scores for LM_full and compare them to LM_not to determine if the models are effectively capturing the language they were trained on.\
-\
-4. Document all observations and findings in a report document. Please refere to the word document\
-\
-Feel free to explore the code and report to see the insights and results of this NLP project!\
-}
+## Overview
+Welcome to my NLP project where I've explored the fascinating world of pretrained transformer models available on Hugging Face (https://huggingface.co/). In this project, I've had the opportunity to gain practical experience with pretrained models and datasets provided by Hugging Face.
+
+Hugging Face offers a treasure trove of pretrained transformer models that can serve as a fantastic starting point for various NLP tasks. This project allowed me to choose and compare different pretrained classification models to better understand their capabilities and performance.
+
+### Project Goal
+The main objective of this project was to select several pretrained classification models available on Hugging Face and compare their performance on a specific NLP classification task. This comparison involved using a dataset provided by Hugging Face and evaluating the accuracy of these models on at least 100 examples from the test set of the dataset.
+
+In this project, I have:
+
+1. Chosen and compared at least three different pretrained classification models, all focused on the same classification task.
+OR
+2. Chosen two different classification tasks and compared two pretrained models for each task.
+
+I had the flexibility to select the classification tasks, but I ensured that both models and relevant datasets were available for the chosen tasks. It was perfectly fine if the models were not explicitly trained on that dataset but were relevant to the classification task.
+
+The primary goal of this project was to gain practical experience with pretrained models and datasets, which can be valuable in future NLP projects and research.
+
+## Hugging Face and Python
+Hugging Face provides a Python library called "transformers" that simplifies working with pretrained models. This library made it incredibly easy to load pretrained models and utilize them for various NLP tasks. The [transformers documentation](https://huggingface.co/transformers/v3.0.2/index.html) provided extensive information on how to work with these models.
+
+For example, when I was using a BERT-based model, I referred to the BERT documentation for specific examples. Otherwise, the `AutoModel` class turned out to be a helpful choice.
+
+The `...ForSequenceClassification` models were ideal for my task. [Here's an example with BERT.](https://huggingface.co/transformers/v3.0.2/model_doc/bert.html#bertforsequenceclassification)
+
+Before diving into the main project, I ensured to explore and practice loading pretrained models from the documentation to get familiar with the library.
+
+## Specific Requirements
+The specific requirements of this project included:
+
+1. Choosing pretrained models to evaluate:
+   a. Selecting three models trained in the same classification task, OR
+   b. Choosing two models trained on task A and two models trained on task B.
+2. Selecting relevant datasets for comparing pretrained models. Each dataset should consist of at least 100 examples for a meaningful comparison.
+3. Writing a comprehensive report covering the following aspects:
+   a. Summarizing the accuracy of all models on their respective datasets.
+   b. Providing explicit comparisons and discussing the results. I identified any surprises or potential issues affecting the results.
+   c. Including a section on the limitations of my comparisons.
+   d. Adding a section on how these pretrained models could be beneficial for future research in the same domain.
+4. Submitting the report along with the code, ensuring that my code followed the guidelines discussed in class and provided online.
+
+## Wrapping Up
+This project was a fantastic opportunity to apply my NLP skills and explore the world of pretrained transformer models. The hands-on experience with Hugging Face's offerings has equipped me with valuable knowledge and skills that I can leverage in my future NLP projects and research.
+
+Please feel free to reach out if you have any questions or need further information about this project.
+
